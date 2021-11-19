@@ -1,6 +1,6 @@
 import 'dart:convert' as jsonconvert;
 
-import 'package:music_app/models/song.dart';
+import 'package:music_app/models/gif.dart';
 
 class Conversion {
   Conversion._() {}
@@ -9,7 +9,7 @@ class Conversion {
     return map[key];
   }
 
-  static List<Song> convertSongObjects(List list) {
-    return list.map((obj) => Song.mapToObject(obj)).toList();
+  static List<Gif> convertSongObjects(List list) {
+    return list.map((obj) => Gif.mapToObject(obj)).toList();
   }
 }
